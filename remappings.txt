@@ -3,3 +3,4 @@ forge-std/=/Users/samacrush/task/code423/traderJoe/lib/forge-std/src/
 ds-test/=/Users/samacrush/task/code423/traderJoe/lib/ds-test/src/
 @openzeppelin/contracts/=/Users/samacrush/task/code423/traderJoe/lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts-upgradeable/=/Users/samacrush/task/code423/traderJoe/lib/openzeppelin-contracts-upgradeable/contracts/
+@uniswap/=/Users/samacrush/task/code423/traderJoe/lib/uniswapv2-solc0.8/contracts/
