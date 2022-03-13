@@ -390,7 +390,7 @@ contract LaunchEvent is Ownable {
         require(wavaxReserve > 0, "LaunchEvent: no wavax balance");
 
         uint256 tokenAllocated = tokenReserve;
-
+        emit log_named_uint("tokenReserve ", tokenReserve);
         // Adjust the amount of tokens sent to the pool if floor price not met
         if (
             floorPrice > (wavaxReserve * 10**token.decimals()) / tokenAllocated
