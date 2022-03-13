@@ -135,7 +135,7 @@ contract RocketJoeStaking is Initializable, OwnableUpgradeable {
     }
 
     /// @notice Withdraw without caring about rewards. EMERGENCY ONLY
-    /// @audit why not just delete it?
+    // / @notice why not just delete it?
     function emergencyWithdraw() external {
         UserInfo storage user = userInfo[msg.sender];
 
