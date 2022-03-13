@@ -3,6 +3,10 @@
 
 pragma solidity ^0.8.0;
 
+import "ds-test/test.sol";
+import "forge-std/Vm.sol";
+import "forge-std/stdlib.sol";
+
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
@@ -16,7 +20,7 @@ import "./interfaces/IWAVAX.sol";
 /// @title Rocket Joe Launch Event
 /// @author Trader Joe
 /// @notice A liquidity launch contract enabling price discovery and token distribution at secondary market listing price
-contract LaunchEvent is Ownable {
+contract LaunchEvent  is DSTest, Ownable {
     /// @notice The phases the launch event can be in
     /// @dev Should these have more semantic names: Bid, Cancel, Withdraw
     enum Phase {
