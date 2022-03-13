@@ -4,3 +4,6 @@
 [submodule "lib/2022-01-trader-joe"]
 	path = lib/2022-01-trader-joe
 	url = https://github.com/code-423n4/2022-01-trader-joe
+[submodule "lib/forge-std"]
+	path = lib/forge-std
+	url = https://github.com/brockelmore/forge-std
