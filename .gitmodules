@@ -12,4 +12,4 @@
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable
 [submodule "lib/uniswapv2-solc0.8"]
 	path = lib/uniswapv2-solc0.8
-	url = https://github.com/islishude/uniswapv2-solc0.8
+	url = https://github.com/bixia/uniswapv2-solc0.8
