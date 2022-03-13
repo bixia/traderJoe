@@ -17,7 +17,7 @@ contract Deploy is DSTest, stdCheats {
     IUniswapV2Router02 public router;
     IWETH public weth;
     Vm public vm = Vm(HEVM_ADDRESS);
-    function setUp() public {
+    function setUp() public virtual {
         //deploy weth
         address wethAddr = deployCode(WethCodePath);
         weth = IWETH(payable(wethAddr));
@@ -37,11 +37,8 @@ contract Deploy is DSTest, stdCheats {
         emit log_named_address("weth", address(weth));
         emit log_named_address("router", address(router));
     }
-    function testDeploy() public {
+    function testDeploy() public virtual{
         require(router.factory() == address(factory));
         require(router.WETH() == address(weth));
-        emit log_named_address("factory", router.factory());
-        emit log_named_address("weth", router.WETH());
-        emit log_named_address("router", address(router));
     }
 }

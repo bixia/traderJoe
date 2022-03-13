@@ -1,4 +1,4 @@
-@traderJoe/=/Users/samacrush/task/code423/traderJoe/lib/2022-01-trader-joe/contracts/
+@traderJoe/=/Users/samacrush/task/code423/traderJoe/src/contracts
 forge-std/=/Users/samacrush/task/code423/traderJoe/lib/forge-std/src/
 ds-test/=/Users/samacrush/task/code423/traderJoe/lib/ds-test/src/
 @openzeppelin/contracts/=/Users/samacrush/task/code423/traderJoe/lib/openzeppelin-contracts/contracts/
