@@ -61,13 +61,13 @@ contract TraderJoeTest is Deploy {
             7 days,
             14 days
         );
-        proxy = LaunchEvent(proxy);
+        proxy = LaunchEvent(payable(proxyAddr));
         vm.stopPrank();
 
         vm.label(address(joe),"joe");
         vm.label(address(rJoe),"rJoe");
         vm.label(address(staking),"staking");
-        vm.label(address(launchEvent),"launchEvent");
+        vm.label(address(launchEvent),"implement");
         vm.label(address(rFactory),"rFactory");
         vm.label(address(reward),"reward");
         vm.label(address(proxy),"proxy");
