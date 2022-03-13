@@ -21,3 +21,5 @@ TraderJoe LaunchPad 学习：
    解决方案有两个：
    1. 其一是：把UniswapV2直接port到0.8.0的版本，所幸的是有人已经做了。但是他只做了core部分，router部分没有做。所以需要把router部分port到0.8.0的版本上。具体可以参见：[uniswap0.8](https://github.com/bixia/uniswapv2-solc0.8) 我自己把router部分重新port了一遍, 欢迎PR；
    2. 其二是：可以用fundry里面的魔法函数：getCode,deployCode。具体做法是：在etherscan上找到uniswapV2Factory,WETH,uniswapV2Router02的合约地址，然后分别把对应的init code和对应的interface拷贝存储到本地。然后在deploy合约里写一个deployCode脚本，生成新的合约地址，再把interface对应上去就变成了一个新的合约了。
+
+
